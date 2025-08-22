@@ -1,0 +1,43 @@
+/* 1 forma de utilizar uma fonte
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');*/
+
+/* 2 forma de utilizar uma fonte*/
+@font-face {
+    font-family: Gabarito;
+    src: url(../assets/fonts/Gabarito/Gabarito-VariableFont_wght.ttf);
+}
+
+/*variaveis*/
+:root {
+    --cor-preto: #121212;
+    --cor-branco: #ffffff;
+    --cor-cinza: #d9d9d9;
+    --cor-roxo-escuro: #98A6F8;
+    --cor-roxo-medio: #ABB6F3;
+    --cor-roxo-claro: #BEC5EE;
+
+    --borda: 1px solid var(--cor-cinza);
+    --borda-arredondada: 2px;
+
+    --tamanho-fonte-lg: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
+}
+
+/*Seção global*/
+*{
+    padding: 0; /*espaço interno*/
+    margin: 0; /*espaço externo*/
+    box-sizing: border-box; /*atribui espaçoa internos/externos e bordas no tamanho final do box*/
+    font-family: "Gabarito", sans-serif;
+}
+
+body{
+    background-color: var(--cor-branco);
+}
+
+h1{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
