@@ -12,6 +12,7 @@
     --cor-preto: #121212;
     --cor-branco: #ffffff;
     --cor-cinza: #d9d9d9;
+    --cor-cinza-claro:#fafafa;
     --cor-roxo-escuro: #98A6F8;
     --cor-roxo-medio: #ABB6F3;
     --cor-roxo-claro: #BEC5EE;
@@ -40,4 +41,30 @@ h1{
     position: absolute;
     z-index: -1;
     opacity: 0;
+}
+
+.formulario-botao-roxo-medio{
+    background-color: var(--cor-roxo-medio);
+    border-radius: var(--borda-arredondada);
+    border: none; /*tira a borda*/
+    height: 35px;
+
+    color: var(--cor-branco);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+.formulario-campos > input{
+    border: var(--borda);
+    height: 35px;
+    background-color: var(--cor-cinza-claro);
+
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
+    border-radius: var(--borda-arredondada);
+}
+
+.formulario-campos > label{
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+    font-weight: 600;
 }
