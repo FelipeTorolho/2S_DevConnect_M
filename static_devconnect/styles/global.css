@@ -13,11 +13,12 @@
     --cor-branco: #ffffff;
     --cor-cinza: #d9d9d9;
     --cor-cinza-claro: #fafafa;
+    --cor-cinza-escuro:#9b9b9b;
     --cor-roxo-escuro: #98A6F8;
     --cor-roxo-medio: #ABB6F3;
     --cor-roxo-claro: #BEC5EE;
 
-    --borda: 1px solid var(--cor-cinza);
+    --borda: 1px solid var(--cor-cinza-escuro);
     --borda-arredondada: 2px;
 
     --tamanho-fonte-lg: 20px;
@@ -34,10 +35,11 @@
     box-sizing: border-box;
     /*atribui espaçoa internos/externos e bordas no tamanho final do box*/
     font-family: "Gabarito", sans-serif;
+    outline-color: var(--cor-cinza-escuro);
 }
 
 body {
-    background-color: var(--cor-branco);
+    background-color: var(--cor-cinza);
 }
 
 h1 {
@@ -82,15 +84,17 @@ h1 {
     display: none;
 }
 
-#label-file{
+#upload{
     display: inline-block;
     width: 100%;
     max-width: 300px;
-    height: 35px;
-    padding: 3px;
+    min-height: 35px; /*para se adaptar conforme o centeudo*/
+    padding: 5px;
     background-color: var(--cor-cinza);
-    border-radius: var(--borda-arredondada);
+    color: var(--cor-preto);
     text-align: center;
+    border-radius: var(--borda-arredondada);
+    font-weight: 500;
 }
 
 
@@ -128,7 +132,7 @@ h1 {
     align-items: center;
 }
 
-#foto-perfil {
+.foto-perfil {
     width: 40px;
     height: 40px;
     object-fit: cover; /*mantem a proporção com um zoom para adaptar ao tamanho do elemento*/
