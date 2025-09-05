@@ -7,7 +7,6 @@ main {
 }
 
 .container-flex-publi {
-    background-color: #8a2be2;
     /* height: 700px; */
     width: 90%;
     max-width: 900px;
@@ -28,10 +27,6 @@ main {
 
 #storys::-webkit-scrollbar {
     width: 0;
-}
-
-.card-storys {
-
 }
 
 .card-storys>button {
@@ -60,10 +55,6 @@ main {
     width: 135px;
 }
 
-#criar-publi {
-    padding: 10px;
-}
-
 #criar-publi>h2 {
     color: var(--cor-preto);
     font-size: var(--tamanho-fonte-lg);
@@ -75,12 +66,14 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding: 10px;
 }
 
 #criar-publi>form>textarea {
-    width: 100%;
+    width: 98%;
     height: 80px;
     padding: 10px;
+    margin: 8px;
     resize: none;
     border: var(--borda);
     color: var(--cor-preto);
@@ -100,7 +93,6 @@ main {
 
 /*seções publicações*/
 #publicacoes {
-    background-color: chocolate;
     width: 100%;
 }
 
@@ -126,6 +118,7 @@ main {
 .card-publi>figure {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .imagem-publicacao {
@@ -153,7 +146,7 @@ main {
 
 .interacoes-publicacao {
     display: flex;
-    width: 88px;
+    width: 70px;
     flex-wrap: wrap;
     justify-content: space-between;
     order: 1;
