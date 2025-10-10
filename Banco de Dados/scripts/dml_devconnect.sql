@@ -8,6 +8,12 @@ VALUES ('Felipe torolho', 'Torolho', 'f@gmail.com', 'f@1234', 'www.escudodosaopa
 INSERT INTO tb_usuario (nome_completo, nome_usuario, email, senha, foto_perfil_url) 
 VALUES ('Rafael torolho', 'Torolhoo', 'r@gmail.com', 'r@1234', 'www.camisadosaopaulo.com');
 
+INSERT INTO tb_usuario (nome_completo, nome_usuario, email, senha, foto_perfil_url)
+VALUES 
+('Felipe Salgado', 'Salgado', 's@gmail.com', 's@1234', 'www.camisadosaopaulo.com'),
+('Felipe Gomes', 'Gomes', 'G@gmail.com', 'g@1234', 'www.camisadosaopaulo.com'),
+('Arthur Batista', 'Arthurbr-yt', 'A@gmail.com', 'A@1234', 'www.camisadosaopaulo.com');
+
 SELECT * FROM tb_usuario;
 
 
@@ -31,8 +37,7 @@ INSERT INTO tb_comentario (texto, data_comentario, id_usuario, id_publicacao) VA
 SELECT * FROM tb_comentario;
 
 
-INSERT INTO tb_seguidor (id_seguidor, id_seguindo) VALUES
-(1, 8),
-(2, 9);
+INSERT INTO tb_seguidor(id_seguindo, id_usuario_seguidor)
+VALUES(1,2);
 
 SELECT * FROM tb_seguidor;
