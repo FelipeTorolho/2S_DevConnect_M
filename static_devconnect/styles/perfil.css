@@ -1,17 +1,16 @@
 main {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    /* organiza em coluna */
     align-items: center;
-    /* centraliza na horizontal */
     padding: 20px;
 }
 
-#cabecalho-foto-perfil {
+#cabecalho-foto-perfil,
+#publicacoes {
     width: 90%;
     max-width: 900px;
 }
+
 
 .perfil {
     display: flex;
@@ -30,12 +29,12 @@ main {
 }
 
 #informacoes {
-    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .bio-perfil span {
-    margin: 5px 0;
-    margin-right: 10px;
     color: #666;
 }
 
@@ -43,6 +42,7 @@ main {
     display: flex;
     gap: 15px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .acoes-perfil a {
@@ -51,14 +51,12 @@ main {
     font-weight: 500;
 }
 
-
 .foto-tela-perfil {
     width: 130px;
     height: 130px;
     border-radius: 50%;
     object-fit: cover;
 }
-
 
 .nome-usuario {
     font-size: var(--tamanho-fonte-md);
@@ -68,8 +66,7 @@ main {
 .nome-verdadeiro {
     font-size: var(--tamanho-fonte-md);
     font-weight: 400;
-}
-
+}   
 
 .informacoes-perfil {
     color: var(--cor-roxo-escuro);
